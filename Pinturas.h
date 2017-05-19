@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Pinturas::public Obras{
+class Pinturas:public Obras{
     private:
         string material_lienzo;
         string tecnica;

@@ -3,7 +3,7 @@
 Esculturas::Esculturas(){
 }
 
-Esculturas::Esculturas(double peso, string material, string enombre, string eid, string eartista, string efecha)::Obras(string oid, string onombre,string oartista, string ofecha){
+Esculturas::Esculturas(double peso, string material, string eid, string enombre, string eartista, string efecha):Obras(eid,enombre,eartista,efecha){
     this->peso=peso;
     this->material=material;
 }

@@ -3,7 +3,7 @@
 Pinturas::Pinturas(){
 }
 
-Pinturas::Pinturas(string material_lienzo, string tecnica, string pid, string pnombre, string partista, string pfecha)::Obras(string oid, string onombre, string oartistas,string ofecha){
+Pinturas::Pinturas(string material_lienzo, string tecnica, string pid, string pnombre, string partista, string pfecha):Obras(pid,pnombre,partista,pfecha){
     this->material_lienzo=material_lienzo;
     this->tecnica=tecnica;
 }

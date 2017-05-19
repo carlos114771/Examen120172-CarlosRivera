@@ -1,17 +1,17 @@
 #include "Obras.h"
 #include <string>
 
-#ifndef DISEÑOSA_H
-#define DISEÑOSA_H
+#ifndef DISENOSA_H
+#define DISENOSA_H
 
 using namespace std;
 
-class DiseñosA:public Obras{
+class DisenosA:public Obras{
     private:
         string terreno;
     public:
-        DiseñosA();
-        DiseñosA(string, string, string, string, string);
+        DisenosA();
+        DisenosA(string, string, string, string, string);
 
         void setTerreno(string);
         string getTerreno();

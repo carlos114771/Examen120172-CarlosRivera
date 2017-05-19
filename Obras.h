@@ -1,14 +1,13 @@
-#include "Obras.h"
 #include <string>
 #ifndef OBRAS_H
 #define OBRAS_H
 using namespace std;
 
 class Obras{
-    private:
+    protected:
         string id;
         string nombre;
-        string autor;
+        string artista;
         string fecha_ingreso;
 
     public:
@@ -16,15 +15,15 @@ class Obras{
         Obras(string,string,string,string);
         
         void setId(string);
-        int getRadio();
+        string getId();
 
         void setNombre(string);
         string getNombre();
 
-        void setAutor();
-        string getAutor();
+        void setArtista(string);
+        string getArtista();
 
-        void setFecha_ingreso();
+        void setFecha_ingreso(string);
         string getFecha_ingreso();
 
 

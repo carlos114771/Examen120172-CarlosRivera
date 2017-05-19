@@ -4,10 +4,9 @@ Obras::Obras(){
        
 }
 
-Obras::Obras(string id,string nombre,string autor,string artista,string fecha){
+Obras::Obras(string id,string nombre,string artista,string fecha){
     this->id=id;
     this->nombre=nombre;
-    this->autor=autor;
     this->artista=artista;
     fecha_ingreso=fecha;
 
@@ -29,23 +28,16 @@ string Obras::getNombre(){
     return nombre;
 }
 
-void Obras::setAutor(string){
-    this->autor=autor;
-}
-
-string Obras::getAutor(){
-    return autor;
-}
-
-void Obras::setArtista(string){
+void Obras::setArtista(string artista){
     this->artista=artista;
 }
 
-string Obras::getArtista(string){
+string Obras::getArtista(){
     return artista;
 }
 
-void Obras::setFecha_ingreso(string){
+
+void Obras::setFecha_ingreso(string fecha){
     fecha_ingreso=fecha;
 }
 

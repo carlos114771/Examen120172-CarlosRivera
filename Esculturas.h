@@ -6,13 +6,13 @@
 
 using namespace std;
 
-class Esculturas:public Obra{
+class Esculturas:public Obras{
     private:
         double peso;
         string material;
     public:
-        Escultura();
-        Escultura(double, string, string, string, string, string);
+        Esculturas();
+        Esculturas(double, string, string, string, string, string);
 
         void setPeso(double);
         double getPeso();
