@@ -12,11 +12,12 @@ using namespace std;
 
 int main(){
     vector<Obras*> obras;
+    vector<Obras*> lista2;
 
     int respuesta=9;
 
     while(respuesta!=4){
-        cout<<endl<<"Bienvenido\n1-Agregar\n2-Lista\n3-Buscar\n4-Transferir\n5-Salir\nIngrese su opcion: ";
+        cout<<endl<<"Bienvenido\n1-Agregar\n2-Lista\n3-Buscar\n4-Transferir\n5-Eliminar\n6-Salir\nIngrese su opcion: ";
         cin>>respuesta;
         //agregar
         if(respuesta==1){
@@ -89,14 +90,43 @@ int main(){
             cout<<"Museo Britanico "<<endl;
             lista(obras);
             cout<<"Otros Museos "<<endl;
+            lista(lista2);
 
         }
         //buscar
         if(respuesta==3){
-
+            string filtro;
+            cout<<"Ingrese el nombre del autor: "<<endl;
+            cin>>filtro;
+            for(int i=0;i<obras.size();i++){
+                cout<<"Obras del museo "<<endl;
+                if(obras.at(i)->getArtista()==filtro){
+                    cout<<"Nombre: "<<obras.at(i)->getNombre()<<endl;
+               }
+               cout<<endl;
+            }
+            cout<<endl;
         }
         //transferir
         if(respuesta==4){
+            int numero;
+            Obras* obratemp;
+
+            cout<<"Ingrese la obra a transferrir: "<<endl;
+           
+            cin>>numero;
+            
+            obratemp=obras.at(numero);
+            lista2.push_back(obratemp);
+            obras.erase(obras.begin()+numero);
+            
+        }
+        //eliminar
+        if(respuesta==5){
+            int opcion;
+            cout<<"Ingrese la posicion a eliminar"<<endl;
+            cin>>opcion;
+            obras.erase(obras.begin()+opcion);
         }
     }
     return 0;
