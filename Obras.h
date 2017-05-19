@@ -1,5 +1,8 @@
+#include "Obras.h"
+#include <string>
 #ifndef OBRAS_H
 #define OBRAS_H
+using namespace std;
 
 class Obras{
     private:
